@@ -1,0 +1,12 @@
+services:
+  puhelinluettelo-front:
+    image: oskarihelenius/puhelinluettelo-front:latest
+    container_name: puhelinluettelo-front
+    ports:
+      - "4173:4173"
+
+  puhelinluettelo-back:
+    image: oskarihelenius/puhelinluettelo-back:latest
+    container_name: puhelinluettelo-back
+    ports:
+      - "3000:3000"
